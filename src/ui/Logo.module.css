@@ -1,0 +1,13 @@
+.logo {
+  font-size: 4rem;
+  padding: 1rem;
+  font-family: Pacifico, sans-serif;
+
+  background-image: linear-gradient(
+    to bottom right,
+    #eae2b7,
+    var(--color-primary)
+  );
+  background-clip: text;
+  color: transparent;
+}

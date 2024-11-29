@@ -1,0 +1,79 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(hero.jpg);
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.header {
+  /* maxWidth: "140rem", */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* backgroundColor: "pink"; */
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headingMain {
+  width: 70%;
+  text-wrap: pretty;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Varela Round", sans-serif;
+  color: #fff;
+  -webkit-text-stroke: 3px var(--color-primary);
+}
+
+.headingContainer {
+  width: 90%;
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBtn {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6b35;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.12s ease-in;
+}
+
+.loginBtn:hover {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  box-shadow: 15px 15px;
+  transform: translateY(-1rem);
+}
+
+.loginBtn:active {
+  background-color: var(--color-primary-dark);
+  transform: translateY(0);
+  color: var(--color-text);
+  box-shadow: none;
+}

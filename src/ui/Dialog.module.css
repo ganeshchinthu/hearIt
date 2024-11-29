@@ -1,0 +1,50 @@
+.dialogContainer {
+  padding: 2rem;
+  width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  border: 3px solid var(--color-primary);
+  border-radius: 10px;
+  gap: 2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+
+  z-index: 1000;
+}
+
+.dialogText {
+  font-size: 1.7rem;
+}
+
+.dialogDeleteBtn {
+  border: none;
+  background-color: red;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialogCancelBtn {
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnsContainer {
+  display: flex;
+  gap: 1.2rem;
+
+  align-self: flex-end;
+}

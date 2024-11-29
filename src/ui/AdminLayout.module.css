@@ -1,0 +1,22 @@
+.container {
+  /* max-width: 140rem; */
+  height: 100vh;
+
+  padding: 1.5rem;
+  margin: auto;
+
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 107, 53, 0.1),
+      rgba(255, 107, 53, 0.2)
+    ),
+    url(/svg-pattern-topography.svg);
+  position: absolute;
+  inset: 0;
+  z-index: -999;
+}

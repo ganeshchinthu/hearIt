@@ -1,0 +1,23 @@
+.logout {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 1.7rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  position: fixed;
+  top: 3%;
+  right: 3%;
+
+  /* transform: translate(-50%, -50%); */
+
+  z-index: 1001;
+  transition: all 0.2s ease-in;
+}
+
+.logout:hover {
+  transform: scale(1.1);
+  background-color: orangered;
+}

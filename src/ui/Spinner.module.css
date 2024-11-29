@@ -1,0 +1,26 @@
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid var(--color-primary);
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  border-radius: 50%;
+  animation: spin 0.9s ease-in-out infinite;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(2turn);
+  }
+}

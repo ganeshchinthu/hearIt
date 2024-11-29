@@ -1,0 +1,45 @@
+:root {
+  --color-primary: #ff6b35;
+  --color-primary-main: #ff6b35;
+  --color-primary-light: #fd7d4a;
+  --color-primary-dark: #e4572e;
+
+  --color-primary-lighter: #efefd0;
+  --color-black: #000;
+  --color-text: #fff;
+  --color-grey: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-primary-main);
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-light) !important;
+}
+
+.btn:disabled {
+  background-color: var(--color-grey) !important;
+  color: var(--color-text);
+  cursor: not-allowed;
+}

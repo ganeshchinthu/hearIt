@@ -1,0 +1,47 @@
+.postTile {
+  text-wrap: pretty;
+  font-size: 1.7rem;
+}
+
+.postDescription {
+  text-wrap: pretty;
+  font-size: 1.6rem;
+}
+
+.postContainer {
+  width: 25rem;
+
+  height: 18rem;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+
+  border: 5px solid var(--color-primary);
+  box-shadow: 6px 6px var(--color-primary);
+
+  background-color: #fbf6f1;
+}
+
+:global(a) {
+  color: inherit;
+}
+
+@media (max-width: 789px) {
+  .postContainer {
+    width: 20rem;
+    gap: 1rem;
+  }
+
+  .postTitle {
+    font-size: 1.5rem;
+  }
+
+  .postDescription {
+    font-size: 1.4rem;
+  }
+}
